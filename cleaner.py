@@ -6,7 +6,7 @@ import shutil
 # Customize these variables
 DOWNLOADS_PATH = Path.home() / "Downloads"
 DAYS_OLD = 30  # Files older than this will be deleted
-FILE_TYPES_TO_DELETE = ['.zip', '.exe', '.msi']  # Optional
+FILE_TYPES_TO_DELETE = ['.zip', '.exe', '.msi']  
 
 def file_is_old(file_path, days=DAYS_OLD):
     file_age = time.time() - os.path.getmtime(file_path)
