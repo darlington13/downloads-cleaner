@@ -5,9 +5,8 @@ import shutil
 
 # addition of ordering  desktop as well 
 DOWNLOADS_PATH = Path.home() / "Downloads"
-DESKTOP_PATH =Path.home()/ "Desktop"
-DAYS_OLD = 30  
-file_types  = ['.zip', '.exe', '.msi', '.pdf']  
+DAYS_OLD = 30  # Files older than this will be deleted
+FILE_TYPES_TO_DELETE = ['.zip', '.exe', '.msi', '.pdf']  # Optional
 
 def file_is_old(file_path, days=DAYS_OLD):
     file_age = time.time() - os.path.getmtime(file_path)
