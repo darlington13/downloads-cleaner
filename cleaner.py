@@ -33,6 +33,7 @@ def order_desktop():
     print(f"Cleaning desktop: {DESKTOP_PATH}")
     ordered_files = 0
     
+    
     # addition of grouping files in folders on the desktop
     pdf_folder = DESKTOP_PATH / "PDFs"
     
